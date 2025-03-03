@@ -1,10 +1,10 @@
-from SELFRec import SELFRec
+grGCLfrom SELFRec import SELFRec
 from util.conf import ModelConf
 
 if __name__ == '__main__':
     # Register your model here
     graph_baselines = ['LightGCN','DirectAU','MF']
-    ssl_graph_models = ['SGL', 'SimGCL', 'SEPT', 'MHCN', 'BUIR', 'SelfCF', 'SSL4Rec', 'XSimGCL', 'NCL', 'MixGCF', 'LightGCL', 'DGL', 'SNGL','SNGL2', 'EISGCL',"SocialLGN"]
+    ssl_graph_models = ['SGL', 'SimGCL',  'XSimGCL',  'LightGCL', 'EgrGCL',"SocialLGN"]
     sequential_baselines= ['SASRec']
     ssl_sequential_models = ['CL4SRec','DuoRec','BERT4Rec']
 
@@ -24,8 +24,7 @@ if __name__ == '__main__':
     print('Self-Supervised Sequential Models:')
     print('   '.join(ssl_sequential_models))
     print('=' * 80)
-    #model = input('Please enter the model you want to run:')
-    model = 'SNGL'
+    model = input('Please enter the model you want to run:')
 
     import time
 
